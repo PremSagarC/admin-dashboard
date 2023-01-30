@@ -1,0 +1,97 @@
+.navbar{
+    height: 50px;
+    border-bottom: 0.5px solid rgb(231,228,228);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+
+    .wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+
+        .search{
+            display: flex;
+            align-items: center;
+            border: 0.5px solid #ff7373;
+            padding: 3px;
+            border-radius: 5px;
+    
+            input{
+                border: none;
+                outline: none;
+                caret-color: #ff7373;
+                color: #ff7373;
+                background-color: transparent;
+
+                &::placeholder{
+                    font-size: 15px;
+                }
+            }
+    
+            .searchIcon{
+                cursor: pointer;
+            }
+        }
+    
+        .items{
+            display: flex;
+            align-items: center;
+
+            #language{
+                cursor: pointer;
+
+                &:hover{
+                    color: #ff7373;
+                }
+            }
+
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+                position: relative;
+
+                .icon{
+                    font-size: 20px;
+                    cursor: pointer;
+
+
+                    &:hover{
+                        color: #ff7373;
+                    }
+                }
+
+                .avatar{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                }
+
+                .counter{
+                    width: 15px;
+                    height: 15px;
+                    background-color: crimson;
+                    border-radius: 50%;
+                    color: white;
+                    font-size: 10px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+        
+
+}

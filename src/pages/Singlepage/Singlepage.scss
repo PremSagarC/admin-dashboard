@@ -1,0 +1,86 @@
+.single {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    .singleContainer {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left {
+                flex: 1;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                padding: 20px;
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 10px;
+                    font-size: 15px;
+                    color: #ff7373;
+                    background-color: #ff737356;
+                    cursor: pointer;
+                    border-bottom-left-radius: 10px;
+                }
+
+                .item {
+                    display: flex;
+                    gap: 20px;
+
+                    .itemImg {
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 10px;
+                            color: #555;
+                        }
+
+                        .detailItem {
+                            margin-bottom: 10px;
+                            font-size: 16px;
+
+                            .itemKey {
+                                font-weight: bold;
+                                color: gray;
+                            }
+
+                            .itemValue {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+
+        .bottom {
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            margin: 10px 20px;
+        }
+
+        .title {
+            font-size: 25px;
+            color: rgb(150, 150, 150);
+            margin-bottom: 20px;
+        }
+    }
+}
